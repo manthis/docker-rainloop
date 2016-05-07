@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Maxime AUBURTIN
+MAINTAINER Maxime AUBURTIN <maxime.auburtin@thunderfeather.com>
 
 # We install the required packages
 RUN apt-get update && apt-get upgrade -y && apt-get install -y apache2 curl php7.0 php7.0-curl php7.0-xml libapache2-mod-php7.0
