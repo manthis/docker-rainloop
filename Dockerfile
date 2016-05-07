@@ -16,6 +16,7 @@ RUN chown -R www-data:www-data /var/www
 
 # We configure Apache
 RUN a2enmod ssl 
+RUN a2enmod rewrite
 ADD ./config/apache2/999-rainloop.conf /etc/apache2/sites-available
 ADD ./config/apache2/998-rainloop-ssl.conf /etc/apache2/sites-available
 RUN a2dissite 000-default.conf 
