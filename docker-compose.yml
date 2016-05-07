@@ -2,8 +2,8 @@ version: '2'
 
 services:
     rainloop:
-        build: .
-        image: manthis/rainloop
+        image: manthis/docker-rainloop
         container_name: rainloop
         ports:
-        - "8080:80"
+        - "80:80"
+        - "443:443"
